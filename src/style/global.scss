@@ -35,7 +35,7 @@ $black: #000;
   color: $dark-green;
 }
 .h5 {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -43,7 +43,7 @@ $black: #000;
   color: $grey;
 }
 .link {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -51,11 +51,24 @@ $black: #000;
   text-decoration-line: underline;
   color: $green;
 }
+.span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $grey;
+}
 .p {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: $grey;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
