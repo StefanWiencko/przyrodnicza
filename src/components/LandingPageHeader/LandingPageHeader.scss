@@ -1,0 +1,20 @@
+.landingPage {
+  .headerElement {
+    padding: $padding-l;
+    background-color: $bg-pink;
+    height: 145px;
+    .headerLink {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: $space-s;
+    }
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+    span {
+      color: $white;
+    }
+  }
+}
