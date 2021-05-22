@@ -2,6 +2,7 @@ import { FC } from "react";
 import { LandingPageNavbar } from "../LandingPageNavbar/LandingPageNavbar";
 import { LandingPageHeader } from "../LandingPageHeader/LandingPageHeader";
 import { LandingPageNews } from "../LandingPageNews/LandingPageNews";
+import { LandingPageOffer } from "../LandingPageOffer/LandingPageOffer";
 
 export const LandingPage: FC = () => {
   return (
@@ -9,6 +10,7 @@ export const LandingPage: FC = () => {
       <LandingPageNavbar />
       <LandingPageHeader />
       <LandingPageNews />
+      <LandingPageOffer />
     </main>
   );
 };
