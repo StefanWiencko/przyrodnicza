@@ -5,30 +5,45 @@ import { Divide as Hamburger } from "hamburger-react";
 export const LandingPageNavbar: FC = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <nav className="landingPageNavbar">
-      <div className="logo"></div>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+    <nav
+      className="h-28 flex justify-between
+     bg-white shadow-pj"
+    >
+      <div className="self-center bg-pj-green w-20 h-20 ml-2.5 z-0"></div>
+      <Hamburger color="#7a7a7a" toggled={isOpen} toggle={setOpen} />
       <ul
-        className="menu"
+        className="absolute top-0 flex-col align-center justify-evenly h-screen bg-white shadow-pj w-full p-5 pj-span"
         style={isOpen ? { display: "flex" } : { display: "none" }}
       >
-        <li>
-          <Link to="/" className="span">
+        <li className="flex-grow  ">
+          <Link
+            to="/"
+            className="text-lg flex justify-center items-center  h-full "
+          >
             Zabiegi i cennik
           </Link>
         </li>
-        <li>
-          <Link to="/" className="span">
+        <li className="flex-grow">
+          <Link
+            to="/"
+            className="text-lg flex justify-center items-center  h-full "
+          >
             O nas
           </Link>
         </li>
-        <li>
-          <Link to="/" className="span">
+        <li className="flex-grow">
+          <Link
+            to="/"
+            className="text-lg flex justify-center items-center  h-full "
+          >
             Kontakt
           </Link>
         </li>
-        <li>
-          <Link to="/" className="span">
+        <li className="flex-grow">
+          <Link
+            to="/"
+            className="text-lg flex justify-center items-center  h-full "
+          >
             Oferty pracy
           </Link>
         </li>

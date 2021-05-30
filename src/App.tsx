@@ -1,9 +1,8 @@
 import { LandingPage } from "./components/LandingPage/LandingPage";
 import { Switch, Route } from "react-router-dom";
-import "./style/main.scss";
 function App() {
   return (
-    <div className="App">
+    <div className="max-w-screen-xl bg-gray-100">
       <Switch>
         <Route path="/" exact component={LandingPage} />
       </Switch>

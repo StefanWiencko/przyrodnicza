@@ -6,7 +6,7 @@ import { LandingPageOffer } from "../LandingPageOffer/LandingPageOffer";
 
 export const LandingPage: FC = () => {
   return (
-    <main className="landingPage">
+    <main>
       <LandingPageNavbar />
       <LandingPageHeader />
       <LandingPageNews />
