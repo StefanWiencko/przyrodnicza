@@ -11,36 +11,36 @@ interface fetchDataType {
   linkText: string;
   linkUrl: string;
 }
+const query = `*[_type == "news"]{
+  text,
+  date,
+  header,
+  paragraph,
+  image{
+    asset->{
+      _id,
+      url
+    },
+    alt
+  },
+  linkText,
+  linkUrl
+
+}`;
 
 export const LandingPageNews: FC = () => {
   const [newsElements, setNewsElemets] = useState<fetchDataType[]>();
   useEffect(() => {
     sanityClient
-      .fetch(
-        `*[_type == "news"]{
-      text,
-      date,
-      header,
-      paragraph,
-      image{
-        asset->{
-          _id,
-          url
-        },
-        alt
-      },
-      linkText,
-      linkUrl
-
-    }`
-      )
+      .fetch(query)
       .then((data) => setNewsElemets(data))
       .catch(console.error);
   }, []);
   return (
-    <section className="landingPageNews">
-      <div className="landingPageNewsCaption">
-        <Link className="link" to="/">
+    <section className="landingPageNews flex-col items-center p-6">
+      <div className="landingPageNewsCaption flex mb-4">
+        <h5 className="pj-h5 mr-6 ">AKTUALNOŚCI</h5>
+        <Link className="pj-link " to="/">
           Zobacz wszystkie
         </Link>
       </div>
