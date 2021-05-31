@@ -1,4 +1,4 @@
-import { LandingPage } from "./components/LandingPage/LandingPage";
+import { LandingPage } from "./components/LandingPage";
 import { Switch, Route } from "react-router-dom";
 function App() {
   return (
